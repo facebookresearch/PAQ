@@ -1,7 +1,7 @@
 # PAQ: 65 Million Probably-Asked Questions and What You Can Do With Them
 
 
-This repository contains code and models to support the research paper [PAQ: 65 Million Probably-Asked Questions and What You Can Do With Them](.)
+This repository contains code and models to support the research paper [PAQ: 65 Million Probably-Asked Questions and What You Can Do With Them](https://arxiv.org/abs/2102.07033)
 
 <br>
 <p align="center">
@@ -37,18 +37,13 @@ Models will be uploaded soon.
 
 To cite this work, please use the following bibtex:
 ```
-@article{lewis_paq_2021,
-  author    = {Patrick Lewis and
-  Yuxiang Wu and
-  Linqing Liu and
-  Pasquale Minervini and
-  Heinrich Kuttler and
-  Aleksandra Piktus and
-  Pontus Stenetorp and
-  Sebastian Riedel
-  },
-  title     = {PAQ: 65 Million Probably-Asked Questions and What You Can Do With Them},
-  year      = {2021},  
+@article{lewis2021paq,
+      title={PAQ: 65 Million Probably-Asked Questions and What You Can Do With Them}, 
+      author={Patrick Lewis and Yuxiang Wu and Linqing Liu and Pasquale Minervini and Heinrich Küttler and Aleksandra Piktus and Pontus Stenetorp and Sebastian Riedel},
+      year={2021},
+      eprint={2102.07033},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
 
