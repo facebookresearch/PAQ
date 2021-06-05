@@ -1,0 +1,8 @@
+{
+  "passage_scorer": {
+    "name": "passage_scorer/dummy",
+    "config":{
+      "default_score": -1000
+    }
+  }
+}

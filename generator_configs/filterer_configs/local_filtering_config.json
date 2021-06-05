@@ -1,0 +1,20 @@
+{
+    "filterer": {
+    "retriever": {
+      "name": "filtering/local_filtering_retriever",
+      "config": {
+        "corpus_path": "data/paq/psgs_w100.tsv"
+      }
+    },
+    "reader": {
+      "name": "filtering/fid_reader",
+      "config": {
+        "model_path": "data/models/filtering/fid_reader_nq_base",
+        "batch_size": 32,
+        "device": 0,
+        "max_seq_len": 200,
+        "n_docs": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "passage_scorer": {
+    "name": "passage_scorer/lookup",
+    "config":{
+      "default_score": -1000,
+      "scores_file": "data/paq/PASSAGE_SCORES/passage_scores.tsv"
+    }
+  }
+}

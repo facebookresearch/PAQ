@@ -1,0 +1,14 @@
+{
+  "filterer": {
+    "retriever": {
+      "name": "filtering/dummy_filtering_retriever",
+      "config": {
+      }
+    },
+    "reader": {
+      "name": "filtering/dummy_reader",
+      "config": {
+      }
+    }
+  }
+}

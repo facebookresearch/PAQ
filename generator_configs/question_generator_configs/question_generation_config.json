@@ -1,0 +1,16 @@
+{
+  "question_generator": {
+    "name": "question_generator/standard",
+    "config": {
+      "model_path": "data/models/qgen/qgen_multi_base",
+      "config_path": null,
+      "tokenizer_path": "data/models/qgen/qgen_multi_base",
+      "include_title": true,
+      "num_beams": 4,
+      "num_return_sequences": 1,
+      "max_question_len": 20,
+      "batch_size": 64,
+      "device": 0
+    }
+  }
+}

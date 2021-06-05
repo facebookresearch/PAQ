@@ -1,0 +1,6 @@
+wget>=3.2
+transformers==4.1.0
+sentencepiece
+protobuf
+submitit
+spacy

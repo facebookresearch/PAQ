@@ -1,0 +1,59 @@
+{
+  "passage_scorer": {
+    "name": "passage_scorer/learnt",
+    "config": {
+      "model_path":"data/models/passage_rankers/passage_ranker_base",
+      "config_path":"data/models/passage_rankers/passage_ranker_base",
+      "tokenizer_path":"data/models/passage_rankers/passage_ranker_base",
+      "device": 0,
+      "batch_size": 64,
+      "max_seq_len": 256
+    }
+  },
+  "answer_extractor": {
+    "name": "answer_extractor/spacy_ner",
+    "config": {
+      "model": "en_core_web_sm"
+    }
+  },
+  "question_generator": {
+    "name": "question_generator/standard",
+    "config": {
+      "model_path": "data/models/qgen/qgen_nq_base",
+      "config_path": null,
+      "tokenizer_path": "data/models/qgen/qgen_nq_base",
+      "include_title": true,
+      "num_beams": 4,
+      "num_return_sequences": 1,
+      "max_question_len": 20,
+      "batch_size": 64,
+      "device": 0
+    }
+  },
+  "filterer": {
+    "retriever": {
+      "name": "filtering/global_filtering_retriever",
+      "config": {
+        "corpus_path": "data/paq/psgs_w100.tsv",
+        "index_path": "data/models/filtering/dpr_nq_passage_retriever/dpr_index.hnsw.SQ8.index.dpr",
+        "index_id_to_db_id_path": "data/models/filtering/dpr_nq_passage_retriever/dpr_index.hnsw.SQ8.index_meta.dpr",
+        "model_path": "data/models/filtering/dpr_nq_passage_retriever",
+        "batch_size": 128,
+        "n_queries_to_parallelize": 2048,
+        "max_seq_len":256,
+        "n_docs": 50,
+        "device": 0
+      }
+    },
+    "reader": {
+      "name": "filtering/fid_reader",
+      "config": {
+        "model_path": "data/models/filtering/fid_reader_nq_base",
+        "batch_size": 4,
+        "device": 0,
+        "max_seq_len": 200,
+        "n_docs": 50
+      }
+    }
+  }
+}

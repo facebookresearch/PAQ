@@ -1,0 +1,16 @@
+{
+  "answer_extractor": {
+    "name": "answer_extractor/span2D",
+    "config": {
+      "model_path": "data/models/answer_extractors/answer_extractor_nq_base",
+      "config_path": "data/models/answer_extractors/answer_extractor_nq_base",
+      "tokenizer_path": "data/models/answer_extractors/answer_extractor_nq_base",
+      "topk": 8,
+      "max_answer_len": 30,
+      "max_seq_len": 256,
+      "doc_stride": 128,
+      "batch_size": 128,
+      "device": 0
+    }
+  }
+}

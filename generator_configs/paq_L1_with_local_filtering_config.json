@@ -1,0 +1,59 @@
+{
+  "passage_scorer": {
+    "name": "passage_scorer/learnt",
+    "config": {
+      "model_path":"data/models/passage_rankers/passage_ranker_base",
+      "config_path":"data/models/passage_rankers/passage_ranker_base",
+      "tokenizer_path":"data/models/passage_rankers/passage_ranker_base",
+      "device": 0,
+      "batch_size": 64,
+      "max_seq_len": 256
+    }
+  },
+  "answer_extractor": {
+    "name": "answer_extractor/span2D",
+    "config": {
+      "model_path": "data/models/answer_extractors/answer_extractor_nq_base",
+      "config_path": "data/models/answer_extractors/answer_extractor_nq_base",
+      "tokenizer_path": "data/models/answer_extractors/answer_extractor_nq_base",
+      "topk": 8,
+      "max_answer_len": 30,
+      "max_seq_len": 256,
+      "doc_stride": 128,
+      "batch_size": 128,
+      "device": 0
+    }
+  },
+  "question_generator": {
+    "name": "question_generator/standard",
+    "config": {
+      "model_path": "data/models/qgen/qgen_multi_base",
+      "config_path": null,
+      "tokenizer_path": "data/models/qgen/qgen_multi_base",
+      "include_title": true,
+      "num_beams": 4,
+      "num_return_sequences": 1,
+      "max_question_len": 20,
+      "batch_size": 64,
+      "device": 0
+    }
+  },
+    "filterer": {
+    "retriever": {
+      "name": "filtering/local_filtering_retriever",
+      "config": {
+        "corpus_path": "data/paq/psgs_w100.tsv"
+      }
+    },
+    "reader": {
+      "name": "filtering/fid_reader",
+      "config": {
+        "model_path": "data/models/filtering/fid_reader_nq_base",
+        "batch_size": 32,
+        "device": 0,
+        "max_seq_len": 200,
+        "n_docs": 1
+      }
+    }
+  }
+}

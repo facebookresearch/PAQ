@@ -1,0 +1,13 @@
+{
+  "passage_scorer": {
+    "name": "passage_scorer/learnt",
+    "config": {
+      "model_path":"data/models/passage_rankers/passage_ranker_base",
+      "config_path":"data/models/passage_rankers/passage_ranker_base",
+      "tokenizer_path":"data/models/passage_rankers/passage_ranker_base",
+      "device": 0,
+      "batch_size": 64,
+      "max_seq_len": 256
+    }
+  }
+}

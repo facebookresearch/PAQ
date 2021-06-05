@@ -1,0 +1,8 @@
+{
+    "answer_extractor": {
+    "name": "answer_extractor/spacy_ner",
+    "config": {
+      "model": "en_core_web_sm"
+    }
+  }
+}
