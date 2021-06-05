@@ -81,7 +81,7 @@ Available metadata to support PAQ is available, and can be downloaded from the f
 ### Preprocessed Wikipedia Dump
 
 This file contains the preprocessed wikipedia dump used to generate PAQ. The file consists of 100-word passages of a 2018 Wikipedia dump, and was produced by [Karphukin et al.](https://github.com/facebookresearch/DPR) for [DPR](https://github.com/facebookresearch/DPR).
-The file is in TSV format, with 3 columns. The first column is passage id, the second column is the wikipedia article title, the third is the passage text. 
+The file is in TSV format, with 3 columns. The first column is passage id, the second column is the passage text, the third is the wikipedia article title. 
 
 ### Passage Selector Scores
 
