@@ -427,7 +427,7 @@ First, download a reranker model, (and if you dont already have retrieval result
 
 ```bash
 # download reranker model (here we're using the albert xxlarge model, smaller ones are available)
-$ python -m paq.download -v -n models.rerankers.retriever_multi_xxlarge
+$ python -m paq.download -v -n models.rerankers.reranker_multi_xxlarge
 
 # download some retrieval results to rerank if you dont already have some
 $ python -m paq.download -v -n predictions.retriever_results.multi_xlarge_nq
@@ -477,7 +477,7 @@ An example of reranking the top 50 retrieved QA pairs on the NQ test set, using 
 ```bash
 # download resources if needed:
 python -m paq.download -v -n annotated_datasets.naturalquestions
-python -m paq.download -v -n models.rerankers.retriever_multi_xxlarge
+python -m paq.download -v -n models.rerankers.reranker_multi_xxlarge
 python -m paq.download -v -n predictions.retriever_results.multi_xlarge_nq
 
 # run reranking
